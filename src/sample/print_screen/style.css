@@ -1,0 +1,59 @@
+#sidePanel{
+    -fx-background-color: #0063ad;
+}
+
+#back {
+    -fx-background-color: #0063ad;
+    -fx-font-size: 25;
+    -fx-text-fill: white;
+}
+#scan{
+    -fx-background-color: #0063ad;
+    -fx-font-size: 25;
+    -fx-text-fill: white;
+}
+#add{
+    -fx-background-color: #0063ad;
+    -fx-font-size: 25;
+    -fx-text-fill: white;
+}
+#remove{
+    -fx-background-color: #0063ad;
+    -fx-font-size: 25;
+    -fx-text-fill: white;
+ }
+#preview{
+    -fx-background-color: #0063ad;
+    -fx-font-size: 25;
+    -fx-text-fill: white;
+  }
+#print{
+    -fx-background-color: #0063ad;
+    -fx-font-size: 25;
+    -fx-text-fill: white;
+   }
+#scan:hover{
+     -fx-background-color: #05a3a3;
+    -fx-font-size: 25;
+    -fx-text-fill: white;
+ }
+#add:hover{
+    -fx-background-color: #05a3a3;
+    -fx-font-size: 25;
+    -fx-text-fill: white;
+}
+#remove:hover{
+    -fx-background-color: #05a3a3;
+    -fx-font-size: 25;
+    -fx-text-fill: white;
+}
+#print:hover{
+    -fx-background-color: #05a3a3;
+    -fx-font-size: 25;
+    -fx-text-fill: white;
+}
+#preview:hover{
+    -fx-background-color: #05a3a3;
+    -fx-font-size: 25;
+    -fx-text-fill: white;
+}

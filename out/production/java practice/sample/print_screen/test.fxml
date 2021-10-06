@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.print_screen.test">
+   <AnchorPane fx:id="mainPanel" prefHeight="800.0" prefWidth="895.0" style="-fx-background-color: #FFFFFF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="-74.0" AnchorPane.topAnchor="0.0">
+      <children>
+         <GridPane layoutX="77.0" layoutY="304.0" prefHeight="126.0" prefWidth="511.0">
+           <columnConstraints>
+             <ColumnConstraints hgrow="SOMETIMES" maxWidth="251.0" minWidth="10.0" prefWidth="221.0" />
+             <ColumnConstraints hgrow="SOMETIMES" maxWidth="291.0" minWidth="10.0" prefWidth="291.0" />
+           </columnConstraints>
+           <rowConstraints>
+             <RowConstraints maxHeight="89.4" minHeight="10.0" prefHeight="48.599999999999994" vgrow="SOMETIMES" />
+             <RowConstraints maxHeight="150.4" minHeight="10.0" prefHeight="39.400000000000006" vgrow="SOMETIMES" />
+             <RowConstraints maxHeight="71.4" minHeight="10.0" prefHeight="51.400000000000006" vgrow="SOMETIMES" />
+           </rowConstraints>
+            <children>
+               <ComboBox fx:id="printerCombo1" onAction="#checkCompo" prefHeight="26.0" prefWidth="291.0" GridPane.columnIndex="1" />
+               <Label prefHeight="41.0" prefWidth="256.0" text="Main Printer" textAlignment="CENTER" wrapText="true">
+                  <font>
+                     <Font size="22.0" />
+                  </font></Label>
+               <ComboBox fx:id="printerCombo2" layoutX="110.0" layoutY="12.0" onAction="#checkCompo" prefHeight="26.0" prefWidth="298.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+               <ComboBox fx:id="printerCombo3" layoutX="110.0" layoutY="73.0" onAction="#checkCompo" prefHeight="26.0" prefWidth="291.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               <Label layoutX="10.0" layoutY="11.0" prefHeight="41.0" prefWidth="256.0" text="Kitchen Printer" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="1">
+                  <font>
+                     <Font size="22.0" />
+                  </font></Label>
+               <Label prefHeight="41.0" prefWidth="256.0" text="Kitchen Printer 2" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS" wrapText="true" GridPane.rowIndex="2">
+                  <font>
+                     <Font name="Arial" size="22.0" />
+                  </font></Label>
+            </children>
+         </GridPane>
+         <Label prefHeight="64.0" prefWidth="320.0" style="-fx-background-color: #FFFFFF;" text="Resturant Name" textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="50.0">
+            <font>
+               <Font size="43.0" />
+            </font>
+         </Label>
+      </children>
+   </AnchorPane>
+   <AnchorPane fx:id="sidePanel" prefHeight="800.0" prefWidth="300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+         <VBox layoutX="78.0" layoutY="175.0" prefHeight="200.0" prefWidth="221.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="200.0">
+            <children>
+               <Button fx:id="scan" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#onScaning" prefHeight="50" prefWidth="300.0" text="Scan">
+                  <VBox.margin>
+                     <Insets bottom="25.0" />
+                  </VBox.margin>
+               </Button>
+               <Button fx:id="add" mnemonicParsing="false" onAction="#onAdding" prefHeight="50" prefWidth="300.0" text="Add">
+                  <VBox.margin>
+                     <Insets bottom="25.0" />
+                  </VBox.margin></Button>
+               <Button fx:id="remove" mnemonicParsing="false" onAction="#onRemoving" prefHeight="50" prefWidth="300.0" text="Remove">
+                  <VBox.margin>
+                     <Insets bottom="25.0" />
+                  </VBox.margin></Button>
+               <Button fx:id="preview" layoutX="10.0" layoutY="160.0" mnemonicParsing="false" onAction="#onPeview" prefHeight="50" prefWidth="300.0" text="preview">
+                  <VBox.margin>
+                     <Insets />
+                  </VBox.margin>
+               </Button>
+               <Button fx:id="print" layoutX="10.0" layoutY="160.0" mnemonicParsing="false" onAction="#onPrinting" prefHeight="50" prefWidth="300.0" text="print">
+                  <VBox.margin>
+                     <Insets bottom="50.0" top="150.0" />
+                  </VBox.margin>
+               </Button>
+            </children></VBox>
+         <Button fx:id="back" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#onScaning" prefHeight="50" prefWidth="300.0" text="back" textAlignment="CENTER" wrapText="true" AnchorPane.topAnchor="0.0" />
+      </children>
+   </AnchorPane>
+</AnchorPane>
